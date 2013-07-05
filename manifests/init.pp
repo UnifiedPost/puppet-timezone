@@ -43,11 +43,11 @@
 #
 # [Remember: No empty lines between comments and class definition]
 class timezone (
-  $timezone = 'UTC',
-  $ensure = 'present',
-  $autoupgrade = false,
-  $package = $timezone::params::package,
-  $config_file = $timezone::params::config_file,
+  $timezone     = 'UTC',
+  $ensure       = 'present',
+  $autoupgrade  = false,
+  $package      = $timezone::params::package,
+  $config_file  = $timezone::params::config_file,
   $zoneinfo_dir = $timezone::params::zoneinfo_dir
 ) inherits timezone::params {
 
