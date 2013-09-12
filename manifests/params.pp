@@ -1,3 +1,7 @@
+# == Class: timezone::params
+#
+# Initializes some parameters based on the distro.
+#
 class timezone::params {
   case $::operatingsystem {
     /(Ubuntu|Debian|Gentoo|CentOS|Amazon)/: {
